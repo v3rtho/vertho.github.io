@@ -21,7 +21,7 @@ The purpose of this blog is to share my experience and knowledge with advising, 
 
 I'm always happy to discuss different topics related to security. You can reach me via:
 
-- **Contact page:** <https://vertho.tech/contact/>
+- **Contact page:** [send me a message](/contact/)
 - **X (Twitter):** [@ThomasVrhydn](https://twitter.com/ThomasVrhydn)
 - **Instagram:** [@thomas.verheyden](https://www.instagram.com/thomas.verheyden/)
 

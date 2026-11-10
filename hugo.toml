@@ -60,6 +60,11 @@ theme = 'PaperMod'
     name = 'Archive'
     url = 'archives/'
     weight = 50
+  [[menu.main]]
+    identifier = 'contact'
+    name = 'Contact'
+    url = 'contact/'
+    weight = 60
 
 # Needed for the search page
 [outputs]

@@ -9,7 +9,7 @@ ShowBreadCrumbs = false
 
 I regularly speak at conferences and user groups about Microsoft Security: Defender XDR, Exposure Management, Intune EPM and securing Microsoft 365.
 
-Want me to speak at your event or user group? [Get in touch](/about/#get-in-touch).
+Want me to speak at your event or user group? [Get in touch](/contact/).
 
 ## At a glance
 

@@ -203,7 +203,7 @@ This blog discusses the importance of file integrity monitoring in protecting se
   
 I provided a step-by-step guide on how to set up file integrity monitoring in Defender for Cloud with some additional troubleshooting tips and tricks. How you can detect changes by using the KQL query language and I ended with a guidance to change the list of your tracked files.   
   
-I hope this was instructive. If you have any comments or concerts you can always contact me on my socials (see below) or via [the contact form](/about/#get-in-touch).
+I hope this was instructive. If you have any comments or concerts you can always contact me on my socials (see below) or via [the contact form](/contact/).
 
 *Sources:*
 

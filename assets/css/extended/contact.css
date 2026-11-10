@@ -1,0 +1,45 @@
+/* Contact page buttons (layouts/_shortcodes/contact-links.html) */
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 28px 0;
+}
+
+.post-content .contact-links a.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 18px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--entry);
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  box-shadow: none;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.post-content .contact-links a.contact-btn:hover {
+  transform: translateY(-2px);
+  border-color: var(--secondary);
+}
+
+.post-content .contact-links a.contact-btn-primary {
+  background: #1c7ed6;
+  border-color: #1c7ed6;
+  color: #fff;
+}
+
+.post-content .contact-links a.contact-btn-primary:hover {
+  border-color: #1971c2;
+  background: #1971c2;
+}
+
+.contact-btn svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}

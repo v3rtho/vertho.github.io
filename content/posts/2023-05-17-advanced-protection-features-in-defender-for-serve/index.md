@@ -146,7 +146,7 @@ Defender for Cloud will create an alert when you violate an adaptive application
 
 Adaptive application controls is a security feature that could be a good starting point when you want to implement application white listing on your machines and you have minor experience with other solutions. It’s currently limited only to audit mode. If you would like to use a more versatile solution i would advise to have a look at Windows Application Control.
 
-I hope this was instructive. If you have any comments or questions you can always contact me on my socials ( @ThomasVrhydn ) or via [the contact form](/about/#get-in-touch).
+I hope this was instructive. If you have any comments or questions you can always contact me on my socials ( @ThomasVrhydn ) or via [the contact form](/contact/).
 
 *Source*s  
   

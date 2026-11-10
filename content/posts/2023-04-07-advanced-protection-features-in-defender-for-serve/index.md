@@ -56,6 +56,6 @@ Defender for Server Plan 2 provides more extended detection and response capabil
 
 My focus currently is on Adaptive Application Control, File integrity monitoring, Adaptive network hardening, Agentless scanning and the MDVM add-on. The capabilities in MDVM add-on are expanding rapidly and maybe it deserve a blog series on its own.I don’t know yet in which order I will provide the different parts of this blog series but the first part will be about File integrity monitoring and will be released in the next weeks. Stay tuned !
 
-**If you have any suggestion or feature that you would like to know more of you can always contact me on [my social networks](https://twitter.com/ThomasVrhydn) or via [the contact button](/about/#get-in-touch) on my blog site.**
+**If you have any suggestion or feature that you would like to know more of you can always contact me on [my social networks](https://twitter.com/ThomasVrhydn) or via [the contact button](/contact/) on my blog site.**
 
 ***Happy reading !***
