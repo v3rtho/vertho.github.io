@@ -36,19 +36,19 @@ theme = 'PaperMod'
 
 [menu]
   [[menu.main]]
+    identifier = 'about'
+    name = 'About'
+    url = 'about/'
+    weight = 10
+  [[menu.main]]
+    identifier = 'events'
+    name = 'Events'
+    url = 'events/'
+    weight = 20
+  [[menu.main]]
     identifier = 'posts'
     name = 'Posts'
     url = 'posts/'
-    weight = 10
-  [[menu.main]]
-    identifier = 'tags'
-    name = 'Tags'
-    url = 'tags/'
-    weight = 20
-  [[menu.main]]
-    identifier = 'archives'
-    name = 'Archive'
-    url = 'archives/'
     weight = 30
   [[menu.main]]
     identifier = 'search'
@@ -56,14 +56,9 @@ theme = 'PaperMod'
     url = 'search/'
     weight = 40
   [[menu.main]]
-    identifier = 'events'
-    name = 'Events'
-    url = 'events/'
-    weight = 45
-  [[menu.main]]
-    identifier = 'about'
-    name = 'About'
-    url = 'about/'
+    identifier = 'archives'
+    name = 'Archive'
+    url = 'archives/'
     weight = 50
 
 # Needed for the search page
