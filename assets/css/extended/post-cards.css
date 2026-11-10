@@ -5,6 +5,13 @@ body.list .main {
   max-width: calc(960px + var(--gap) * 2);
 }
 
+/* Compact welcome block: PaperMod gives it a 320px min-height with centered text */
+.home-info,
+.first-entry.home-info {
+  min-height: 0;
+  margin: 12px 0 32px;
+}
+
 .list-section-title {
   margin: 8px 0 20px;
   font-size: 15px;
