@@ -1,7 +1,13 @@
-baseURL = 'https://example.org/'
+# GitHub Pages project site. When moving to the vertho.tech domain, change this to
+# 'https://vertho.tech/' and add a file static/CNAME containing: vertho.tech
+baseURL = 'https://v3rtho.github.io/vertho.github.io/'
 locale = 'en-us'
 title = 'My Blog'
 theme = 'PaperMod'
+
+# Same URL structure as the old WordPress site, so existing links keep working
+[permalinks]
+  posts = '/:year/:month/:day/:slug/'
 
 [pagination]
   pagerSize = 10
@@ -22,7 +28,7 @@ theme = 'PaperMod'
 
   [[params.socialIcons]]
     name = 'github'
-    url = 'https://github.com/'
+    url = 'https://github.com/v3rtho'
 
   [[params.socialIcons]]
     name = 'rss'
@@ -32,27 +38,32 @@ theme = 'PaperMod'
   [[menu.main]]
     identifier = 'posts'
     name = 'Posts'
-    url = '/posts/'
+    url = 'posts/'
     weight = 10
   [[menu.main]]
     identifier = 'tags'
     name = 'Tags'
-    url = '/tags/'
+    url = 'tags/'
     weight = 20
   [[menu.main]]
     identifier = 'archives'
     name = 'Archive'
-    url = '/archives/'
+    url = 'archives/'
     weight = 30
   [[menu.main]]
     identifier = 'search'
     name = 'Search'
-    url = '/search/'
+    url = 'search/'
     weight = 40
+  [[menu.main]]
+    identifier = 'events'
+    name = 'Events'
+    url = 'events/'
+    weight = 45
   [[menu.main]]
     identifier = 'about'
     name = 'About'
-    url = '/about/'
+    url = 'about/'
     weight = 50
 
 # Needed for the search page

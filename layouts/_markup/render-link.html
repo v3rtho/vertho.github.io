@@ -1,0 +1,11 @@
+{{- /* Root-relative links ("/about/", "/2023/08/04/slug/") get the baseURL path prefix,
+       so they keep working when the site lives in a sub-folder. Everything else is unchanged. */ -}}
+{{- $href := .Destination -}}
+{{- if and (strings.HasPrefix $href "/") (not (strings.HasPrefix $href "//")) -}}
+  {{- $href = strings.TrimPrefix "/" $href | relURL -}}
+{{- end -}}
+<a href="{{ $href | safeURL }}"
+  {{- with .Title }} title="{{ . }}"{{ end -}}
+  {{- if strings.HasPrefix .Destination "http" }} rel="noopener"{{ end -}}
+>{{ .Text }}</a>
+{{- /**/ -}}
