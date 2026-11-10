@@ -1,0 +1,63 @@
+baseURL = 'https://example.org/'
+locale = 'en-us'
+title = 'My Blog'
+theme = 'PaperMod'
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  description = 'My personal blog'
+  author = 'Your Name'
+  defaultTheme = 'auto'
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+
+  [params.homeInfoParams]
+    Title = 'Hi there 👋'
+    Content = 'Welcome to my blog. I write about things I find interesting.'
+
+  [[params.socialIcons]]
+    name = 'github'
+    url = 'https://github.com/'
+
+  [[params.socialIcons]]
+    name = 'rss'
+    url = 'index.xml'
+
+[menu]
+  [[menu.main]]
+    identifier = 'posts'
+    name = 'Posts'
+    url = '/posts/'
+    weight = 10
+  [[menu.main]]
+    identifier = 'tags'
+    name = 'Tags'
+    url = '/tags/'
+    weight = 20
+  [[menu.main]]
+    identifier = 'archives'
+    name = 'Archive'
+    url = '/archives/'
+    weight = 30
+  [[menu.main]]
+    identifier = 'search'
+    name = 'Search'
+    url = '/search/'
+    weight = 40
+  [[menu.main]]
+    identifier = 'about'
+    name = 'About'
+    url = '/about/'
+    weight = 50
+
+# Needed for the search page
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
+
+[markup.highlight]
+  noClasses = false
