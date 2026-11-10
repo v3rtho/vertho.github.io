@@ -9,7 +9,7 @@ ShowBreadCrumbs = false
 
 Welcome to my blog! My name is **Thomas Verheyden**, and I am a **Security Architect** based in Belgium.
 
-After completing my bachelor's degree, I began my career in IT consultancy and worked my way up from support engineer to Security Architect. Over the past 15 years, I have worked with a variety of enterprise clients in different sectors, and for the last 8 years, I have been working as a freelance security consultant.
+After completing my bachelor's degree, I began my career in IT consultancy and worked my way up from support engineer to Security Architect. Over the past 16 years, I have worked with a variety of enterprise clients in different sectors, and for the last 9 years, I have been working as a freelance security consultant.
 
 ## What this blog is about
 
