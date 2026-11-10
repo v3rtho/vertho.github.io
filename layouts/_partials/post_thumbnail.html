@@ -1,0 +1,33 @@
+{{- /* Square thumbnail for a post card.
+       Order: front matter cover.image -> first image in the page bundle that is at least
+       300px wide (skips tiny inline icons) -> placeholder. */ -}}
+{{- $img := false }}
+{{- with .Params.cover.image }}
+  {{- with $.Resources.Get . }}{{ $img = . }}{{ end }}
+{{- end }}
+{{- /* 1st choice: a screenshot that isn't a thin banner (crops badly to a square) */ -}}
+{{- if not $img }}
+  {{- range .Resources.ByType "image" }}
+    {{- if and (not $img) (ne .MediaType.SubType "svg") (ge .Width 300) (le .Width (mul .Height 2.2)) }}{{ $img = . }}{{ end }}
+  {{- end }}
+{{- end }}
+{{- /* 2nd choice: any image of reasonable size */ -}}
+{{- if not $img }}
+  {{- range .Resources.ByType "image" }}
+    {{- if and (not $img) (ne .MediaType.SubType "svg") (ge .Width 300) }}{{ $img = . }}{{ end }}
+  {{- end }}
+{{- end }}
+{{- $category := index (.Params.categories | default (slice)) 0 | default (index (.Params.tags | default (slice)) 0) }}
+<div class="post-thumb">
+  {{- if $img }}
+    {{- $small := $img.Fill "400x400 TopLeft webp q80" }}
+    <img src="{{ $small.RelPermalink }}" width="{{ $small.Width }}" height="{{ $small.Height }}" alt="" loading="lazy">
+  {{- else }}
+    <div class="post-thumb-placeholder" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 3l7 3v6c0 4.5-3 7.7-7 9-4-1.3-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/>
+      </svg>
+    </div>
+  {{- end }}
+  {{- with $category }}<span class="post-thumb-badge">{{ . }}</span>{{ end }}
+</div>
