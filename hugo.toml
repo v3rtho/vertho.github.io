@@ -2,7 +2,7 @@
 # 'https://vertho.tech/' and add a file static/CNAME containing: vertho.tech
 baseURL = 'https://v3rtho.github.io/vertho.github.io/'
 locale = 'en-us'
-title = 'My Blog'
+title = 'Vertho'
 theme = 'PaperMod'
 
 # Same URL structure as the old WordPress site, so existing links keep working
@@ -13,8 +13,8 @@ theme = 'PaperMod'
   pagerSize = 10
 
 [params]
-  description = 'My personal blog'
-  author = 'Your Name'
+  description = 'Blogging about (Microsoft) Security and more'
+  author = 'Thomas Verheyden'
   defaultTheme = 'auto'
   ShowReadingTime = true
   ShowPostNavLinks = true
@@ -23,8 +23,8 @@ theme = 'PaperMod'
   ShowToc = true
 
   [params.homeInfoParams]
-    Title = 'Hi there 👋'
-    Content = 'Welcome to my blog. I write about things I find interesting.'
+    Title = 'Vertho | Verheyden Thomas'
+    Content = 'Blogging about (Microsoft) Security and more'
 
   [[params.socialIcons]]
     name = 'github'
