@@ -44,7 +44,8 @@ jobs:
 
       - name: Build
         run: |
-          hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+          # baseURL comes from hugo.toml (https://vertho.tech/)
+          hugo --gc --minify
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
