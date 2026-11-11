@@ -4,13 +4,14 @@ lastmod = '2023-04-13T21:48:32+01:00'
 draft = false
 title = "Tutorial: Change the workspace destination of your already provisioned Data Collection Rule used by the Azure Monitoring Agent"
 slug = 'tutorial-change-the-workspace-destination-of-you-data-collection-rule'
-description = "This post is inspired on different setups I saw while working with my clients. More and more clients are leveraging the Azure Monitoring Agent (AMA) and Data Collection Rules (DCR) to collect log…"
+description = "Step-by-step tutorial to point an existing Data Collection Rule of the Azure Monitoring Agent to a different Log Analytics workspace."
 author = 'Thomas Verheyden'
 tags = ["Azure Monitor Agent", "Data Collection Rule", "Defender for Cloud"]
 categories = ["Defender for Cloud"]
 
 [cover]
   image = 'view-data-collection-rules.png'
+  relative = true
   hiddenInSingle = false
 +++
 

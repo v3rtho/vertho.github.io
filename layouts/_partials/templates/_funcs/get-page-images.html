@@ -1,0 +1,61 @@
+{{- /* Based on PaperMod's get-page-images. Added: when a post has no `images` front matter and
+       no "feature/cover/thumbnail" file, use its first real screenshot (the same choice as the
+       front-page card), so shared links on LinkedIn/X and Google get a preview image. */ -}}
+{{- $imgs := slice }}
+{{- $imgParams := .Params.images }}
+{{- $resources := .Resources.ByType "image" -}}
+{{/* Find featured image resources if the images parameter is empty. */}}
+{{- if not $imgParams }}
+  {{- $featured := $resources.GetMatch "*feature*" -}}
+  {{- if not $featured }}{{ $featured = $resources.GetMatch "{*cover*,*thumbnail*}" }}{{ end -}}
+  {{/* First screenshot that is not a tiny icon or a thin banner, then any reasonably sized image. */}}
+  {{- if not $featured }}
+    {{- range $resources }}
+      {{- if and (not $featured) (ne .MediaType.SubType "svg") (ge .Width 300) (le .Width (mul .Height 2.2)) }}{{ $featured = . }}{{ end }}
+    {{- end }}
+  {{- end }}
+  {{- if not $featured }}
+    {{- range $resources }}
+      {{- if and (not $featured) (ne .MediaType.SubType "svg") (ge .Width 300) }}{{ $featured = . }}{{ end }}
+    {{- end }}
+  {{- end }}
+  {{- with $featured }}
+    {{- $imgs = $imgs | append (dict
+      "Image" .
+      "RelPermalink" .RelPermalink
+      "Permalink" .Permalink) }}
+  {{- end }}
+{{- end }}
+{{/* Use the first one of site images as the fallback. */}}
+{{- if and (not $imgParams) (not $imgs) }}
+  {{- with site.Params.images }}
+    {{- $imgParams = first 1 . }}
+  {{- end }}
+{{- end }}
+{{/* Parse page's images parameter. */}}
+{{- range $imgParams }}
+  {{- $img := . }}
+  {{- $url := urls.Parse $img }}
+  {{- if eq $url.Scheme "" }}
+    {{/* Internal image. */}}
+    {{- with $resources.GetMatch $img -}}
+      {{/* Image resource. */}}
+      {{- $imgs = $imgs | append (dict
+        "Image" .
+        "RelPermalink" .RelPermalink
+        "Permalink" .Permalink) }}
+    {{- else }}
+      {{- $imgs = $imgs | append (dict
+        "RelPermalink" (relURL $img)
+        "Permalink" (absURL $img)
+      ) }}
+    {{- end }}
+  {{- else }}
+    {{/* External image */}}
+    {{- $imgs = $imgs | append (dict
+      "RelPermalink" $img
+      "Permalink" $img
+    ) }}
+  {{- end }}
+{{- end }}
+{{- return $imgs }}

@@ -3,6 +3,7 @@ baseURL = 'https://vertho.tech/'
 locale = 'en-us'
 title = 'Vertho'
 theme = 'PaperMod'
+enableRobotsTXT = true    # robots.txt with a pointer to the sitemap
 
 # Same URL structure as the old WordPress site, so existing links keep working
 [permalinks]
