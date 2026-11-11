@@ -1,6 +1,5 @@
-# GitHub Pages project site. When moving to the vertho.tech domain, change this to
-# 'https://vertho.tech/' and add a file static/CNAME containing: vertho.tech
-baseURL = 'https://v3rtho.github.io/vertho.github.io/'
+# Served from the custom domain (static/CNAME) on GitHub Pages
+baseURL = 'https://vertho.tech/'
 locale = 'en-us'
 title = 'Vertho'
 theme = 'PaperMod'
