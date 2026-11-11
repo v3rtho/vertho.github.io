@@ -14,8 +14,6 @@ categories = []
 
 During my **latest** engagements with different **customers** I frequently received the question why you still have to configure Azure permissions if you want to use the unified portal experience in Defender to access log analytics workspace log data. I can finally say this isn’t the case anymore, Microsoft recently announced that Unified RBAC supports Sentinel permissions in the Defender Portal. I tested it **out** already and will share some limitations and **tricks** and tips!  
   
-The Microsoft Defender Unified Role based access mapper [RBAC XDR – Vertho | Verheyden Thomas](https://vertho.tech/rbac-xdr/)
-
 ## What’s new: Defender Unified RBAC for Sentinel
 
 - **Sentinel permissions in the Defender Portal**: Sentinel permissions can now be managed directly in the Microsoft Defender portal without the need to switch to the Azure portal for access management. This includes data lake support.
