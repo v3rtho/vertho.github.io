@@ -1,5 +1,6 @@
 +++
 title = 'Events'
+aliases = ['/speaking/']    # old WordPress address
 description = 'Conferences and user groups where I have spoken about Microsoft Security.'
 draft = false
 ShowToc = true

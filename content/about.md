@@ -1,5 +1,6 @@
 +++
 title = 'About'
+aliases = ['/over/']    # old WordPress address
 description = 'Thomas Verheyden – Security Architect based in Belgium.'
 draft = false
 ShowToc = false
