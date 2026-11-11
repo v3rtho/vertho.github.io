@@ -23,6 +23,4 @@ I'm always happy to discuss different topics related to security. You can reach 
 
 - **Contact page:** [send me a message](/contact/)
 - **X (Twitter):** [@ThomasVrhydn](https://twitter.com/ThomasVrhydn)
-- **Instagram:** [@thomas.verheyden](https://www.instagram.com/thomas.verheyden/)
-
 Thanks for stopping by, and I hope you find my blog informative and helpful!
