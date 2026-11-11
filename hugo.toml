@@ -46,6 +46,11 @@ theme = 'PaperMod'
     url = 'events/'
     weight = 20
   [[menu.main]]
+    identifier = 'tools'
+    name = 'Tools'
+    url = 'tools/'
+    weight = 25
+  [[menu.main]]
     identifier = 'posts'
     name = 'Posts'
     url = 'posts/'
